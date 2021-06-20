@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView totalConfirm, totalActive, totalRecovered, totalDeaths, totalTests;
     private TextView todayConfirm, todayRecovered, todayDeaths, dateTV;
     private PieChart pieChart;
+    private TextView population;
 
 
     private List<CountryData> list;
@@ -65,11 +66,13 @@ public class MainActivity extends AppCompatActivity {
                                 int active = Integer.parseInt(list.get(i).getActive());
                                 int recovered = Integer.parseInt(list.get(i).getRecovered());
                                 int death = Integer.parseInt(list.get(i).getDeaths());
+                                int populationNo = Integer.parseInt(list.get(i).getPopulation());
 
                                 totalConfirm.setText(NumberFormat.getInstance().format(confirm));
                                 totalActive.setText(NumberFormat.getInstance().format(active));
                                 totalRecovered.setText(NumberFormat.getInstance().format(recovered));
                                 totalDeaths.setText(NumberFormat.getInstance().format(death));
+                                population.setText(NumberFormat.getInstance().format(populationNo));
 
                                 todayDeaths.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getTodayDeaths())));
                                 todayConfirm.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getTodayCases())));
@@ -116,5 +119,6 @@ public class MainActivity extends AppCompatActivity {
         todayDeaths = findViewById(R.id.todayDeaths);
         pieChart = findViewById(R.id.pieChart);
         dateTV = findViewById(R.id.date);
+        population = findViewById(R.id.population);
     }
 }

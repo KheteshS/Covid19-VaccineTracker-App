@@ -14,9 +14,10 @@ public class CountryData {
     private String todayRecovered;
     private String active;
     private String tests;
+    private String population;
     private Map<String, String> countryInfo;
 
-    public CountryData(String updated, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String todayRecovered, String active, String tests, Map<String, String> countryInfo) {
+    public CountryData(String updated, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String todayRecovered, String active, String tests, String population, Map<String, String> countryInfo) {
         this.updated = updated;
         this.country = country;
         this.cases = cases;
@@ -27,7 +28,16 @@ public class CountryData {
         this.todayRecovered = todayRecovered;
         this.active = active;
         this.tests = tests;
+        this.population = population;
         this.countryInfo = countryInfo;
+    }
+
+    public String getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(String population) {
+        this.population = population;
     }
 
     public String getUpdated() {
