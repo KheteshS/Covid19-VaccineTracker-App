@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
                                 totalDeaths.setText(NumberFormat.getInstance().format(death));
                                 population.setText(NumberFormat.getInstance().format(populationNo));
 
+
                                 todayDeaths.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getTodayDeaths())));
                                 todayConfirm.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getTodayCases())));
                                 todayRecovered.setText(NumberFormat.getInstance().format(Integer.parseInt(list.get(i).getTodayRecovered())));
@@ -106,6 +107,12 @@ public class MainActivity extends AppCompatActivity {
         calendar.setTimeInMillis(ms);
 
         dateTV.setText("Updated at "+format.format(calendar.getTime()));
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
     }
 
     private void init() {
