@@ -15,7 +15,6 @@ import com.bumptech.glide.Glide;
 import com.ksrp.vaccine.api.CountryData;
 
 import java.text.NumberFormat;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
