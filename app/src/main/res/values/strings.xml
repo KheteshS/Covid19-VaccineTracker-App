@@ -4,4 +4,12 @@
     <string name="bold" tools:ignore="ReferenceType">@font/rubikbold</string>
     <string name="regular" tools:ignore="ReferenceType">@font/rubikregular</string>
     <string name="light" tools:ignore="ReferenceType">@font/rubiklight</string>
+    <string name="vaccine_availability">Vaccine Availability</string>
+    <string name="covid_19_tracker">covid-19 Tracker</string>
+    <string name="covid_19_tracker_amp"><![CDATA[Covid-19 Tracker &]]></string>
+    <string name="search_here">Search Here</string>
+    <string name="country_name">Country Name</string>
+    <string name="total_cases">Total Cases</string>
+    <string name="search">Search</string>
+    <string name="enter_pin_code">Enter Pin Code</string>
 </resources>

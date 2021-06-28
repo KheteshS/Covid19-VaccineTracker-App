@@ -137,34 +137,6 @@ public class MainActivity extends AppCompatActivity {
         }
         backPressedTime = System.currentTimeMillis();
 
-
-//        if(backPressed){
-//            backToast.cancel();
-//            MainActivity.super.onBackPressed();
-//            return;
-//        } else {
-//            this.backPressed = true;
-//            Toast.makeText(this, "Press back again to exit", Toast.LENGTH_SHORT);
-//            new Handler().postDelayed(new Runnable() {
-//                @Override
-//                public void run() {
-//                    backPressed = false;
-//                }
-//            }, 2000);
-//        }
-
-
-//        new AlertDialog.Builder(this)
-//                .setTitle("Really Exit?")
-//                .setMessage("Are you sure you want to exit Covid Tracker?")
-//                .setNegativeButton(android.R.string.no, null)
-//                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-//
-//                    public void onClick(DialogInterface arg0, int arg1) {
-//                        MainActivity.super.onBackPressed();
-//                    }
-//                }).create().show();
-
     }
 
 
